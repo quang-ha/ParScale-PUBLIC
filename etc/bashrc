@@ -28,6 +28,19 @@
 #------------------------------------------------------------------------------
 
 #-define relative paths
+# PASCAL
+export PASCAL_HDF5_DIR="/usr/local/hdf5"
+export PASCAL_C11_STD=-std=c++11
+export PASCAL_QT5_DIR="/usr/local/Qt5.7.0/5.7/gcc_64"
+export PASCAL_LIB_NAME=pasc_fedora_fpic
+export PASCAL_LIGGGHTS_DIR="/home/qth20/Documents/LIGGGHTS-PUBLIC/src"
+export PASCAL_SRC_DIR="/home/qth20/Documents/ParScale-PUBLIC/src"
+
+# Extra libs
+export PASCAL_EXTRA_LIBS="-L/home/qth20/Documents/chemkinReader/build/src -L/usr/local/Qt5.7.0/5.7/gcc_64/lib"
+
+# Libraries, including chemkinreader
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$PASCAL_QT5_DIR/lib:$PASCAL_HDF5_DIR/lib64:$PASCAL_THIRDPARTY_DIR/chemkinReader/src/
 
 #- path to examples
 export PASCAL_EXAMPLE_DIR=$PASCAL_SRC_DIR/../examples
@@ -45,7 +58,7 @@ export PASCAL_INST_DIR=$PASCAL_SRC_DIR/../platforms/linux64
 export PASCAL_THIRDPARTY_DIR=$PASCAL_SRC_DIR/../thirdParty
 
 #- path to sundials package
-export PASCAL_SUNDIALS_DIR=$PASCAL_THIRDPARTY_DIR/sundials-2.5.0
+# export PASCAL_SUNDIALS_DIR=$PASCAL_THIRDPARTY_DIR/sundials-2.5.0
 
 #------------------------------------------------------------------------------
 
@@ -74,6 +87,3 @@ alias parScaleComp='bash $PASCAL_SRC_DIR/refresh'
 alias parScaleCompLib='bash $PASCAL_SRC_DIR/refreshLibrary.sh'
 
 #------------------------------------------------------------------------------
-
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$PASCAL_QT5_DIR/lib:$PASCAL_THIRDPARTY_DIR/chemkinReader/src/:$PASCAL_HDF5_DIR/lib
-
