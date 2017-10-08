@@ -40,7 +40,7 @@ export PASCAL_SRC_DIR="/home/qth20/Documents/ParScale-PUBLIC/src"
 export PASCAL_EXTRA_LIBS="-L/home/qth20/Documents/chemkinReader/build/src -L/usr/local/Qt5.7.0/5.7/gcc_64/lib"
 
 # Libraries, including chemkinreader
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$PASCAL_QT5_DIR/lib:$PASCAL_HDF5_DIR/lib64:$PASCAL_THIRDPARTY_DIR/chemkinReader/src/
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$PASCAL_QT5_DIR/lib:$PASCAL_HDF5_DIR/lib:$PASCAL_THIRDPARTY_DIR/chemkinReader/src/
 
 #- path to examples
 export PASCAL_EXAMPLE_DIR=$PASCAL_SRC_DIR/../examples
