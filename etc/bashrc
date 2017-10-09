@@ -36,12 +36,6 @@ export PASCAL_LIB_NAME=pasc_fedora_fpic
 export PASCAL_LIGGGHTS_DIR="/home/qth20/Documents/LIGGGHTS-PUBLIC/src"
 export PASCAL_SRC_DIR="/home/qth20/Documents/ParScale-PUBLIC/src"
 
-# Extra libs
-export PASCAL_EXTRA_LIBS="-L/home/qth20/Documents/chemkinReader/build/src -L/usr/local/Qt5.7.0/5.7/gcc_64/lib"
-
-# Libraries, including chemkinreader
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$PASCAL_QT5_DIR/lib:$PASCAL_HDF5_DIR/lib:$PASCAL_THIRDPARTY_DIR/chemkinReader/src/
-
 #- path to examples
 export PASCAL_EXAMPLE_DIR=$PASCAL_SRC_DIR/../examples
 
@@ -56,6 +50,12 @@ export PASCAL_INST_DIR=$PASCAL_SRC_DIR/../platforms/linux64
 
 #- path to third party
 export PASCAL_THIRDPARTY_DIR=$PASCAL_SRC_DIR/../thirdParty
+
+# Extra libs
+export PASCAL_EXTRA_LIBS="-L/home/qth20/Documents/chemkinReader/build/src -L/usr/local/Qt5.7.0/5.7/gcc_64/lib"
+
+# Libraries, including chemkinreader
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$PASCAL_QT5_DIR/lib:$PASCAL_HDF5_DIR/lib:$PASCAL_THIRDPARTY_DIR/chemkinReader/src/
 
 #- path to sundials package
 # export PASCAL_SUNDIALS_DIR=$PASCAL_THIRDPARTY_DIR/sundials-2.5.0
